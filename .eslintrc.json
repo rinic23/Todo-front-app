@@ -1,3 +1,73 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["next", "plugin:react-hooks/recommended", "plugin:@typescript-eslint/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-shadow": "off",
+    "camelcase": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["."]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "png": "ignorePackages",
+        "svg": "ignorePackages",
+        "pdf": "ignorePackages",
+        "jpg": "ignorePackages"
+      }
+    ],
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/react-in-jsx-scope": "off",
+
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+
+    "no-plusplus": "warn",
+    "no-bitwise": "warn",
+    "no-param-reassign": "warn",
+    "no-nested-ternary": "off",
+    "no-return-await": "off",
+    "no-template-curly-in-string": "warn",
+    "radix": "warn",
+    "import/order": "warn",
+    "spaced-comment": "warn",
+    "no-underscore-dangle": "warn",
+    "consistent-return": "warn",
+    "import/prefer-default-export": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-prototype-builtins": "warn",
+    "array-callback-return": "warn",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off"
+  }
 }
