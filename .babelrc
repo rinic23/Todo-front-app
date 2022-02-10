@@ -1,6 +1,7 @@
 {
   "presets": ["next/babel"],
   "plugins": [
-    ["effector/babel-plugin", { "importName": ["effector-next"] }]
+    ["effector/babel-plugin", { "importName": ["effector-next"] }],
+    ["import", { "libraryName": "antd", "style": true }]
   ]
 }

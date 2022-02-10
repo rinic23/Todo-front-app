@@ -1,5 +1,5 @@
-import '../styles/globals.scss';
-import '../styles/antd.less';
+import '../public/styles/globals.scss';
+import '../public/styles/antd.less';
 import { withHydrate } from 'effector-next';
 import type { AppProps } from 'next/app';
 
@@ -10,5 +10,3 @@ function MyApp({ Component, pageProps }: AppProps) {
 const enhance = withHydrate();
 
 export default enhance(MyApp);
-
-

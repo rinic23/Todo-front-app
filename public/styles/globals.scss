@@ -1,0 +1,48 @@
+@import '~leaflet/dist/leaflet.css';
+@import 'antd/es/modal/style';
+@import 'antd/es/slider/style';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+// width
+.w-100 {
+  width: 100%;
+}
+
+body {
+  font-style: normal;
+  overflow-x: hidden;
+  height: 100%;
+  font-size: inherit;
+}
+html {
+  height: 100%;
+}
